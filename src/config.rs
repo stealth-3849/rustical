@@ -76,7 +76,6 @@ impl Default for NextcloudLoginConfig {
 }
 
 #[derive(Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct Config {
     pub data_store: DataStoreConfig,
     #[serde(default)]
